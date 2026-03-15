@@ -24,6 +24,8 @@ node_modules/
 .next/
 .nuxt/
 .expo/
+*.tsbuildinfo
+next-env.d.ts
 
 # IDE
 .idea/
