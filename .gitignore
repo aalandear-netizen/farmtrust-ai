@@ -1,0 +1,54 @@
+# Build artifacts and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment files (sensitive)
+.env
+*.env.local
+*.env.*.local
+
+# Node
+node_modules/
+.next/
+.nuxt/
+.expo/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test / coverage
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# Docker volumes
+postgres_data/
+redis_data/
+
+# ML model weights (large binary files)
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "FarmTrust AI",
+    "slug": "farmtrust-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#16a34a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farmtrust.ai"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#16a34a"
+      },
+      "package": "com.farmtrust.ai"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-notifications",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow FarmTrust to access your location."
+        }
+      ]
+    ],
+    "scheme": "farmtrust"
+  }
+}

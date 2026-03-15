@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 17, 24, 39;
+  --background-start-rgb: 249, 250, 251;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+  }
+  .badge-grade-aaa { @apply bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-aa  { @apply bg-green-100 text-green-700 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-a   { @apply bg-lime-100 text-lime-800 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-bbb { @apply bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-bb  { @apply bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-b   { @apply bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-c   { @apply bg-red-200 text-red-900 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+  .badge-grade-d   { @apply bg-red-300 text-red-950 text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+}
