@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import Head from 'next/head';
 import Link from 'next/link';
-import { api } from '../services/api';
+import { api } from '../../services/api';
 
 const GRADE_COLORS: Record<string, string> = {
   AAA: '#16a34a', AA: '#22c55e', A: '#84cc16',
